@@ -1,0 +1,14 @@
+[Unit]
+Description=Create influx keycloak user
+After=influxdb.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/sysconfig/cloudtrust_influxdb_init
+ExecStart=/cloudtrust/influx-tools/bin/python /cloudtrust/influx-tools/scripts/populate.py $USERNAME $PASSWORD $DATABASE
+ExecStart=+/bin/systemctl disable influxdb_init 
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
+
