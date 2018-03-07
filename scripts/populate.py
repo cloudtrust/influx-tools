@@ -65,6 +65,7 @@ parser.add_argument(
     help='port of InfluxDB http API'
 )
 
+
 def validate_json(json_file, json_schema):
     #Validate the incoming json file
     try:
@@ -191,4 +192,4 @@ if __name__ == "__main__":
         raise e
     finally:
         client.close()
-	logger.info("Influxdb client: closed HTTP session")
+	    logger.info("Influxdb client: closed HTTP session")
