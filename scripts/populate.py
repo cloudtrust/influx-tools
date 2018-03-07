@@ -192,4 +192,4 @@ if __name__ == "__main__":
         raise e
     finally:
         client.close()
-	    logger.info("Influxdb client: closed HTTP session")
+        logger.info("Influxdb client: closed HTTP session")
