@@ -1,0 +1,9 @@
+{
+  "container_name": "influx-1",
+  "service_name": "influxdb",
+  "webserver": "nginx",
+  "monit_timeout": 10,
+  "influxdb_timeout": 45,
+  "nginx_timeout": 45,
+  "ports": ["80"]
+}
