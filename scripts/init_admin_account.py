@@ -114,7 +114,7 @@ if __name__ == "__main__":
     }
 
     credentials_file = args.cred_file
-    logger.info("Loading credentials json file from {path}".format(path=cred_file))
+    logger.info("Loading credentials json file from {path}".format(path=credentials_file))
 
     try:
 
