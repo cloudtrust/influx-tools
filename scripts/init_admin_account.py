@@ -123,7 +123,7 @@ if __name__ == "__main__":
 
     except IOError as e:
         logger.debug(e)
-        raise IOError("Config file {path} not found".format(path=influx_json_file))
+        raise IOError("Config file {path} not found".format(path=credentials_file))
     else:
         logger.debug(
             json.dumps(
