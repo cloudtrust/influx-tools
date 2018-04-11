@@ -1,7 +1,7 @@
 {
   "host_ip": "127.0.0.1",
   "port": "8086",
-  "user": "test",
-  "password": "test",
+  "user": "keycloak",
+  "password": "keycloak",
   "database": "keycloak"
 }

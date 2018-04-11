@@ -1,5 +1,5 @@
 {
-  "container_name": "influx-1",
+  "container_name": "influx",
   "service_name": "influxdb",
   "webserver": "nginx",
   "monit_timeout": 10,
